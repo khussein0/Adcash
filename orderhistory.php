@@ -73,8 +73,8 @@
 						<td><?php echo $row['order_price']; ?></td>
 						<td><?php echo $row['order_date']; ?></td>
 						<td>
-							<a href="#editorder<?php echo $row['order_id']; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a> || <a href="#deleteorder<?php echo $row['order_id']; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
-								<?php include('order_modal.php'); ?>
+							<a href="#editorder<?php echo $row['order_id']; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-pencil"></span> Edit</a> <?php include('order_modal.php'); ?>|| <a href="#deleteorder<?php echo $row['order_id']; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+							<?php include('order_modal.php'); ?>
 						</td>
 					</tr>
                 <?php                
